@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --fontRoboto: 'Roboto Slab', serif;
+    --navSize: 1.875em;
+    --marginNav: 15em;
+    --marginNavItems: 1em;
+    --marginLog: 1em;
+    --logoWidth: 6.845em;
+    --logoHeight: 6.845em;
+    --logoMarginLEft: 5em;
+    --loginWidth: 4em;
+    --loginHeight: 4em;
+    --backgroundBody: #E7D6D9;
+    --mainTitleSize: 4em;
+    --mainTitleColor: rgba(25, 36, 133, 0.8);
+    --mainTitleStroke: 2px #770505;
+    --fontIrish:'Irish Grover', cursive;
+    --backgroundItem: rgba(190, 227, 115, 0.6);
+    --itemTitleSize: 3em;
+    --itemTitleColor: #F8EDED;
+    --itemTitlePadding: 0.3em 0.6em 3em 0.3em;
+    --itemStroke: 2px #510505;
+    --itemDescSize: 1.5em;
+    --itemDescColor: #fab0b0;
+    --itemDescStroke: 1px #510505;
+    --itemDescTop: 17em;
+    --itemButtonSize: 2.5em;
+    --itemButtonBorder: solid 3px black;
+    --itembuttonPadding: 0.1em 0.4em 0.1em 0.4em;
+    --itemButtomTop: 11.3em;
+    --itemButtonLeft: 2.5em;
+    --itemNameTop: 7em;
+    --itemTitle3Top: 6.3em;
+    --itemDesc3Top: 15.4em;
+    --itemButtom3Top: 10.3em;
+    --itemTitle4Top: 6.3em;
+    --itemTitle4Left: 15.1em;
+    --itemDesc4Top: 15.3em;
+    --itemDesc4Left: 30.7em;
+    --itemButtom4Top: 10.3em;
+    --itemButtom4Left: 18.8em;
+    --infoTitleStroke: 2px #770505;
+    --infoTitleSize: 4em;
+    --infoDescColor: black;
+    --infoDescSize: 2.5em;
+    --infoButtonSize: 2.5em;
+    --infoButtonText: 'Road Rage', cursive;
+    --infoButtonColor: white;
+    --footerTextSize: 2em;
+    --footerBrandSize: 4em;
+    --footerSubTitleSize: 2.5em;
+}
+
+.background{
+    background-color: var(--backgroundBody);
+}
+
+.whatsappButton{
+    position: fixed;
+    bottom: 5em;
+    right: 2em;
+    height: 6em;
+    width: 6em;
+    z-index: 66;
+}
+
+.nav-logo{
+    width: var(--logoWidth);
+    height: var(--logoHeight);
+    margin-left: var(--logoMarginLEft);
+}
+
+li a{
+    font-size: var(--navSize);
+    font-family: var(--fontRoboto);
+    margin-left: var(--marginNavItems);
+}
+
+.login{
+    margin-right: var(--marginLog);
+}
+
+.nav-login{
+    width: var(--loginWidth);
+    height: var(--loginHeight);
+}
+
+.collapse{
+    margin-left: var(--marginNav);
+}
+
+.banner{
+    background-image: url(../img/portada.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.mainTitle{
+    font-size: var(--mainTitleSize);
+    font-family: var(--fontIrish);
+    color: var(--mainTitleColor);
+    -webkit-text-stroke: var(--mainTitleStroke);
+    padding-top: 1em;
+    text-align: center;
+}
+
+.descItem{
+    position: relative;
+    z-index: 0;
+}
+
+.itemsBorder{
+    border: solid 1px red;
+    border-top-left-radius: 2.5em;
+    border-bottom-right-radius: 2.5em;
+}
+
+.itemName{
+    font-family: var(--fontIrish);
+    font-size: var(--itemTitleSize);
+    color: var(--itemTitleColor);
+    -webkit-text-stroke: var(--itemStroke);
+    position: absolute;
+    z-index: 1;
+    top: var(--itemNameTop);
+    left: 1.5em;
+    background-color: var(--backgroundItem);
+    padding: var(--itemTitlePadding);
+    padding-right: 2em;
+    border-radius: 0.3em;
+}
+
+.itemDesc{
+    font-size: var(--itemDescSize);
+    color: var(--itemDescColor);
+    -webkit-text-stroke: var(--itemDescStroke);
+    position: absolute;
+    z-index: 1;
+    top: var(--itemDescTop);
+    left: 3.5em;
+}
+
+.itemBut a{
+    text-decoration: none;
+    color: var(--itemTitleColor);
+    -webkit-text-stroke: var(--itemStroke);
+}
+
+.itemBut{
+    background-color: transparent;
+    font-size: var(--itemButtonSize);
+    font-family: var(--fontIrish);
+    position: absolute;
+    z-index: 1;
+    top: var(--itemButtomTop);
+    left: var(--itemButtonLeft);
+    border: var(--itemButtonBorder);
+    padding: var(--itembuttonPadding);
+}
+
+.product3{
+    top: var(--itemTitle3Top);
+}
+
+.itemsDesc3{
+    top: var(--itemDesc3Top);
+}
+
+.itemBut3{
+    top: var(--itemButtom3Top);
+}
+
+.product4{
+    top: var(--itemTitle4Top);
+    left: var(--itemTitle4Left);
+}
+
+.itemsDesc4{
+    top: var(--itemDesc4Top);
+    left: var(--itemDesc4Left);
+}
+
+.itemBut4{
+    top: var(--itemButtom4Top);
+    left: var(--itemButtom4Left);
+}
+
+.nameInfo{
+    font-size: var(--infoTitleSize);
+    font-family: var(--fontIrish);
+    color: var(--infoDescColor);
+    -webkit-text-stroke: var(--infoTitleStroke);
+    padding-top: 1em;
+    
+}
+
+.descInfo{
+    font-size: var(--infoDescSize);
+    font-family: var(--fontRoboto);
+    margin-left: 1em;
+}
+
+.infoBut{
+    background-color: #000000;
+    font-size: var(--infoButtonSize);
+    border: solid 3px #e36d6d;
+    margin-top: 1em;
+    margin-left: 2em;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+}
+
+
+.infoBut a{
+    text-decoration: none;
+    font-family: var(--infoButtonText);
+    color: var(--infoButtonColor);
+}
+
+
+footer{
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    margin-top: 3em;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footerInfo{
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+.footerInfo a{
+    color: white;
+    font-size: var(--footerTextSize);
+    font-family: var(--fontRoboto);
+}
+
+.footerInfo h3{
+    font-size: var(--footerBrandSize);
+    font-family: var(--fontIrish);
+    color: var(--itemTitleColor);
+    -webkit-text-stroke: var(--itemStroke);
+    margin-top: 1em;
+}
+
+.footerLogo{
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+.footerInfo2{
+    margin-top: 6em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.footerInfo2 h2{
+    font-size: var(--footerSubTitleSize);
+    font-family: var(--fontIrish);
+    color: var(--itemTitleColor);
+    -webkit-text-stroke: var(--itemStroke);
+}
+
+.footerInfo2 span{
+    color: white;
+    font-size: var(--footerTextSize);
+    font-family: var(--fontRoboto);
+}
+
+.footerInfo2 hr{
+    border: none ;
+    background-color: red ;
+    height: 4px !important;
+}
+
+.footerInfo2 img{
+    margin-right: 1em;
+}
+
+.signature{
+    font-size: 0.8em;
+    font-family: var(--fontRoboto);
+}
+
+.signatureName{
+    font-size: 0.8em;
+    font-family: var(--fontRoboto);
+    color: red;
+    margin-left: 1em;
+}
+
+/* ************************************************************************************************** */
+/*                          @MEDIA */
+/* ************************************************************************************************** */
+
+@media (max-width: 1700px){
+    :root{
+        --navSize: 1.3em;
+        --logoWidth: 4em;
+        --logoHeight: 4em;
+        --loginWidth: 3em;
+        --loginHeight: 3em;
+    }
+}
+
+@media (max-width: 1400px){
+    :root{
+        --navSize: 1em;
+        --logoWidth: 3em;
+        --logoHeight: 3em;
+        --itemTitleSize: 2em;
+        --itemDescSize: 1em;
+        --itemButtonSize: 1.5em;
+        --loginWidth: 2em;
+        --loginHeight: 2em;
+        --itemNameTop: 11em;
+        --itemDescTop: 25em;
+        --itemButtomTop: 18em;
+        --itemButtomLeft: 3em;
+        --itemTitle3Top: 8.5em;
+        --itemDesc3Top: 20em;
+        --itemButtom3Top: 14.5em;
+        --itemTitle4Top: 8.5em;
+        --itemTitle4Left: 20em;
+        --itemDesc4Top: 20em;
+        --itemDesc4Left: 40.8em;
+        --itemButtom4Top: 14.5em;
+        --itemButtom4Left: 27.5em;
+    }
+}
+
+@media (max-width: 1200px){
+    :root{
+        --navSize: 0.8em;
+        --logoWidth: 2.5em;
+        --logoHeight: 2.5em;
+        --itemTitleSize: 1.8em;
+        --itemDescSize: 0.9em;
+        --itemButtonSize: 1.2em;
+        --loginWidth: 1.8em;
+        --loginHeight: 1.8em;
+        --itemNameTop: 9em;
+        --itemDescTop: 21em;
+        --itemButtomTop: 17em;
+        --itemTitle3Top: 7em;
+        --itemDesc3Top: 17em;
+        --itemButtom3Top: 14em;
+        --itemTitle4Top: 7em;
+        --itemTitle4Left: 17em;
+        --itemDesc4Top: 17em;
+        --itemDesc4Left: 35em;
+        --itemButtom4Top: 14em;
+        --itemButtom4Left: 26em;
+    }
+}
+
+@media (max-width: 995px){
+    :root{
+        --logoMarginLEft: 1em;
+        --marginNav: 0em;
+        --navSize: 0.8em;
+        --logoWidth: 2.5em;
+        --logoHeight: 2.5em;
+        --itemTitleSize: 1.2em;
+        --itemDescSize: 0.6em;
+        --itemButtonSize: 1em;
+        --loginWidth: 1.8em;
+        --loginHeight: 1.8em;
+        --itemNameTop: 11.5em;
+        --itemDescTop: 26em;
+        --itemButtomTop: 16.5em;
+        --itemTitle3Top: 10em;
+        --itemDesc3Top: 23em;
+        --itemButtom3Top: 14.8em;
+        --itemTitle4Top: 10em;
+        --itemTitle4Left: 22em;
+        --itemDesc4Top: 23em;
+        --itemDesc4Left: 44.5em;
+        --itemButtom4Top: 14.8em;
+        --itemButtom4Left: 27em;
+    }
+
+    .login{
+        height: 3em;
+        width: 3em;
+    }
+}
+
+@media (max-width: 768px){
+    :root{
+        --logoMarginLEft: 1em;
+        --marginNav: 0em;
+        --navSize: 0.8em;
+        --logoWidth: 2.5em;
+        --logoHeight: 2.5em;
+        --itemTitleSize: 2em;
+        --itemDescSize: 1em;
+        --itemButtonSize: 1.5em;
+        --loginWidth: 1.8em;
+        --loginHeight: 1.8em;
+        --itemNameTop: 10em;
+        --itemDescTop: 23em;
+        --itemButtomTop: 16.5em;
+        --itemTitle3Top: 2em;
+        --itemDesc3Top: 7em;
+        --itemButtom3Top: 6em;
+        --itemTitle4Top: 2em;
+        --itemTitle4Left: 1.5em;
+        --itemDesc4Top: 7em;
+        --itemDesc4Left: 4em;
+        --itemButtom4Top: 6em;
+        --itemButtom4Left: 2.5em;
+    }
+
+    .login{
+        height: 3em;
+        width: 3em;
+    }
+}
+
+@media (max-width: 530px){
+    :root{
+        --logoMarginLEft: 1em;
+        --marginNav: 0em;
+        --mainTitleSize: 3em;
+        --backgroundItem: rgba(190, 227, 115, 0.3);
+        --itemTitleSize: 1.5em;
+        --itemTitlePadding: 0.3em 0.6em 3em 1.5em;
+        --itemNameTop: 8em;
+        --itemDescSize: 0.8em;
+        --itemDescTop: 17.5em;
+        --itemButtonSize: 1.1em;
+        --itemButtomTop: 14em;
+        --itemTitle3Top: 1.1em;
+        --itemDesc3Top: 5em;
+        --itemButtom3Top: 4.8em;
+        --itemTitle4Top: 1.1em;
+        --itemDesc4Top: 5em;
+        --itemButtom4Top: 4.8em;
+        --infoTitleSize: 3em;
+        --infoDescSize: 1.5em;
+        --infoButtonSize: 1.7em;
+        --footerTextSize: 1.5em;
+        --footerBrandSize: 3em;
+        --footerSubTitleSize: 1.8em;
+    }
+
+    .login{
+        height: 3em;
+        width: 3em;
+    }
+}
+
+@media (max-width: 360px){
+    :root{
+        --logoMarginLEft: 1em;
+        --marginNav: 0em;
+        --mainTitleSize: 2em;
+        --backgroundItem: rgba(190, 227, 115, 0.3);
+        --itemTitleSize: 1em;
+        --itemTitlePadding: 0.3em 0.6em 3em 1.5em;
+        --itemNameTop: 8em;
+        --itemDescSize: 0.5em;
+        --itemDescTop: 19em;
+        --itemButtonSize: 0.8em;
+        --itemButtomTop: 13em;
+        --itemTitle3Top: 1.5em;
+        --itemDesc3Top: 5.7em;
+        --itemButtom3Top: 4.6em;
+        --itemTitle4Top: 1em;
+        --itemDesc4Top: 4.8em;
+        --itemButtom4Top: 4.2em;
+        --infoTitleSize: 2em;
+        --infoDescSize: 1em;
+        --infoButtonSize: 1.4em;
+        --footerTextSize: 1em;
+        --footerBrandSize: 2.5em;
+        --footerSubTitleSize: 1.5em;
+    }
+
+    .login{
+        height: 3em;
+        width: 3em;
+    }
+}
