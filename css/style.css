@@ -388,6 +388,9 @@ footer a{
         --itemDesc4Left: 40.8em;
         --itemButtom4Top: 14.5em;
         --itemButtom4Left: 27.5em;
+        /* PRODUCTS */
+        --subTitleSize: 2.5em;
+        --productsFontSize: 1.2em;
     }
 }
 
@@ -413,6 +416,9 @@ footer a{
         --itemDesc4Left: 35em;
         --itemButtom4Top: 14em;
         --itemButtom4Left: 26em;
+        /* PRODUCTS */
+        --subTitleSize: 2em;
+        --productsFontSize: 1em;
     }
 }
 
@@ -440,6 +446,9 @@ footer a{
         --itemDesc4Left: 44.5em;
         --itemButtom4Top: 14.8em;
         --itemButtom4Left: 27em;
+        /* PRODUCTS */
+        --subTitleSize: 1.6em;
+        --productsFontSize: 1em;
     }
 
     .login{
@@ -472,6 +481,9 @@ footer a{
         --itemDesc4Left: 4em;
         --itemButtom4Top: 6em;
         --itemButtom4Left: 2.5em;
+        /* PRODUCTS */
+        --subTitleSize: 1.4em;
+        --productsFontSize: 1em;
     }
 
     .login{
@@ -505,6 +517,9 @@ footer a{
         --footerTextSize: 1.5em;
         --footerBrandSize: 3em;
         --footerSubTitleSize: 1.8em;
+        /* PRODUCTS */
+        --subTitleSize: 1.2em;
+        --productsFontSize: 0.8em;
     }
 
     .login{
@@ -538,6 +553,9 @@ footer a{
         --footerTextSize: 1em;
         --footerBrandSize: 2.5em;
         --footerSubTitleSize: 1.5em;
+        /* PRODUCTS */
+        --subTitleSize: 1.2em;
+        --productsFontSize: 0.8em;
     }
 
     .login{
