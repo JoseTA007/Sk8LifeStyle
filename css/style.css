@@ -54,8 +54,16 @@
     --footerTextSize: 2em;
     --footerBrandSize: 4em;
     --footerSubTitleSize: 2.5em;
+    /* PRODUCTOS */
+    --subTitleStroke: 2px #597BAE;
+    --subTitleColor: #BF3737;
+    --subTitleSize: 3em;
+    --productsFontSize: 1.5em;
 }
 
+/* ************************************************************************************************************** */
+/*                                            INICIO INDEX                                                        */
+/* ************************************************************************************************************** */
 .background{
     background-color: var(--backgroundBody);
 }
@@ -299,6 +307,49 @@ footer a{
     color: red;
     margin-left: 1em;
 }
+
+/* ************************************************************************************************************** */
+/*                                            FIN INDEX                                                           */
+/* ************************************************************************************************************** */
+/* ************************************************************************************************************** */
+/*                            INICIO SKATEBOARDS 22" INDEX                                                        */
+/* ************************************************************************************************************** */
+.subTitle{
+    font-size: var(--subTitleSize);
+    font-family: var(--fontIrish);
+    color: var(--subTitleColor);
+    -webkit-text-stroke: var(--subTitleStroke);
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.productsContainer{
+    border: 1px solid red;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+}
+
+.productsImgSize{
+    height: 350px;
+    width: 250px;
+    border-radius: 1em;
+}
+
+.productsFont{
+    font-family: var(--fontIrish);
+    font-size: var(--productsFontSize);
+    margin-top: 1em;
+}
+
+
+
+/* ************************************************************************************************************** */
+/*                               FIN SKATEBOARDS 22" INDEX                                                        */
+/* ************************************************************************************************************** */
 
 /* ************************************************************************************************** */
 /*                          @MEDIA */
